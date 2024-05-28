@@ -41,7 +41,7 @@ También puedes añadir funciones para hacer que el elemento ejecute ciertas acc
 
 ## Importación
 
-Copia el script de [`este enlace`]() o añade a tu página el siguiente elemento:
+Copia el script de [`este enlace`](https://raw.githubusercontent.com/gacarbla/Web-tools/main/src/Elements/js/script.min.js) o añade a tu página el siguiente elemento:
 ```html
-<script src=""></script>
+<script src="https://raw.githubusercontent.com/gacarbla/Web-tools/main/src/Elements/js/super.min.js"></script>
 ```
