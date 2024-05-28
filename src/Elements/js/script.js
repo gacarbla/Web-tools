@@ -11,7 +11,7 @@
 /**
  * ElementImporter class to import and replace custom HTML elements with specified configurations.
  */
-class ElementImporter {
+const ElementImporter = class {
     /**
      * @param {ElementConfig[]} elementConfigs - Configuration objects for elements to be replaced.
     */
