@@ -26,9 +26,7 @@ Así es como debes declararlo en el HTML:
 Y así es como se vería:
 
 ```html
-<div class="my-custom-element">
-    <span atributos="del elemento">Contenido del elemento</span>
-</div>
+<span class="my-custom-element" atributos="del elemento">Contenido del elemento</span>
 ```
 
 También puedes añadir funciones para hacer que el elemento ejecute ciertas acciones en ciertos eventos.
