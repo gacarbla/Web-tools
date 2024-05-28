@@ -14,11 +14,11 @@ const element = {
 .my-custom-element {
     border: 1px solid black;
 }
-</style```
+</style```,
     value: '<span>$content</span>'
 }
 
-new ElementImporter(element);
+new ElementImporter([element]);
 ```
 
 <!> Atención: Acuérdate de utilizarlo una vez el HTML haya sido cargado. Puedes utilizar el eventListener de DOMContentLoaded para lograrlo.
