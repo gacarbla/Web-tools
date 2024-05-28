@@ -1,4 +1,4 @@
-# Elements `v1.0`
+# Elements `v1.3`
 
 ¿Te gustaría poder tener un HTML más limpio?
 Con Elements podrás lograrlo sin recurrir a herramientas server-side.
@@ -8,13 +8,7 @@ Ejemplo de elemento personalizado:
 ```js
 const element = {
     name: 'my-custom-element',
-    style: ```<style>
-/* Estilo que deseas darle al elemento */
-/* Puedes llamar al elemento mediante la clase que contenga su mismo nombre */
-.my-custom-element {
-    border: 1px solid black;
-}
-</style```,
+    style: `<style> .my-custom-element { border: 1px solid black; } </style>`,
     value: '<span>$content</span>'
 }
 

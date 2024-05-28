@@ -46,9 +46,9 @@ const ElementImporter = class {
             elements.forEach(originalElement => {
                 if (config.beforeCreate) config.beforeCreate(originalElement);
                 const newElement = document.createElement('div');
-                newElement.className = config.name
                 newElement.innerHTML = config.value;
                 const replacementElement = newElement.firstElementChild;
+                replacementElement.classList.add(config.name);
                 if (replacementElement) {
                     Array.from(originalElement.attributes).forEach(attr => {
                         replacementElement.setAttribute(attr.name, attr.value);
