@@ -40,6 +40,7 @@ const ElementImporter = class {
      * @return {void}
      */
     replaceElements() {
+        const variableRegEx = /\(.*?\)/;
         if (!this.importContainer) return;
         this.elementConfigs.forEach(config => {
             const elements = document.querySelectorAll(config.name);
@@ -51,7 +52,12 @@ const ElementImporter = class {
                 replacementElement.classList.add(config.name);
                 if (replacementElement) {
                     Array.from(originalElement.attributes).forEach(attr => {
-                        replacementElement.setAttribute(attr.name, attr.value);
+                        if (variableRegEx.test(attr.name)) {
+                            let variable = str.slice(1, -1);
+                            if (config.value.includes(`$${variable}`)) replacementElement.innerHTML.replace(`$${variable}`, attr.value)
+                        } else {
+                            replacementElement.setAttribute(attr.name, attr.value);
+                        }
                     });
                     if (config.value.includes('$content')) {
                         replacementElement.innerHTML = replacementElement.innerHTML.replace('$content', originalElement.innerHTML);

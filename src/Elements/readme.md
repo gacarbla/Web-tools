@@ -1,4 +1,4 @@
-# Elements `v1.3`
+# Elements `v1.4`
 
 ¿Te gustaría poder tener un HTML más limpio?
 Con Elements podrás lograrlo sin recurrir a herramientas server-side.
